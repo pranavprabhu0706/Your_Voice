@@ -1,0 +1,23 @@
+[package]
+name = "your-voice"
+version = "1.0.0"
+description = "Voice-to-Text Desktop App with Tauri + Deepgram"
+authors = ["you"]
+license = ""
+repository = ""
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.5", features = [ "window-hide", "window-minimize", "window-maximize", "window-close", "window-unminimize", "window-show", "window-start-dragging", "shell-open", "window-unmaximize"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[features]
+# This feature is used for production builds or when `devPath` points to the filesystem
+custom-protocol = ["tauri/custom-protocol"]
+
