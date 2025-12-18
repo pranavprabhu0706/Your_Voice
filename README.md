@@ -209,9 +209,3 @@ The application follows a clean architecture with clear separation:
 - Component-based architecture for maintainability
 - Large ecosystem and community support
 - Good TypeScript integration
-
-### Audio Processing
-- Using Web Audio API for high-quality audio capture
-- 16kHz sample rate optimized for speech recognition
-- Float32Array to Int16Array conversion for Deepgram compatibility
-- ScriptProcessorNode for real-time audio streaming
